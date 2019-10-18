@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Word Counter</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Word Counter</h1>
+    </header>
+    <div class="wrapper">
+      <div class="counters">
+        <div class="word-count card">
+          <p class="title">Words</p>
+          <p id="words" class="number">0</p>
+        </div>
+        <div class="character-count card">
+          <p class="title">Characters</p>
+          <p id="characters" class="number">0</p>
+        </div>
+        <div class="space-count card">
+          <p class="title">Spaces</p>
+          <p id="spaces" class="number">0</p>
+        </div>
+        <div class="line-count card">
+          <p class="title">Lines</p>
+          <p id="lines" class="number">0</p>
+        </div>
+      </div>
+
+      <div class="sub-wrapper">
+        <div class="text-fromating-wrapper">
+          <i class="fas fa-bold" title="Bold" id="bold"></i>
+          <i class="fas fa-italic" title="Italic" id="italic"></i>
+          <i class="fas fa-sync-alt" title="Clear All" id="clear"></i>
+        </div>
+        <div class="input-wrapper">
+          <textarea
+            id="textarea"
+            type="text"
+            placeholder="Type or paste your text"
+          ></textarea>
+        </div>
+        <div class="footer-wrapper">
+          Free online Word, Character, Space and Line counter tool powered by
+          high technology
+        </div>
+      </div>
+    </div>
+    <footer>
+      Designed with <i class="fas fa-heart"></i> By <span>Shoaib Sayyed</span>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
